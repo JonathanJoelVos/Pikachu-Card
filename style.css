@@ -1,0 +1,118 @@
+
+*:not(.card, .raio) {
+    box-sizing: border-box;/* lembrar de apagar as outras */
+    font-family: 'Syne Mono', monospace;
+}
+
+main {
+    width: 100%;
+    margin: 10% auto;
+}
+
+.card {
+    box-shadow: 5px 5px black; 
+}
+.card-identificacao {
+    height: 15%;
+
+}
+
+.nome h1 {
+    float: left;
+}
+
+.nome p {
+    float: right;
+    color: white;
+    font-weight: bold;
+}
+
+.raio {
+    clear: left;
+    font-size: 0.8em;
+    width: 30px;
+    padding: 5px 10px;
+    background-color: #ffffc659;
+    border-radius: 30px;
+    color: rgb(100, 99, 99);
+    float: left;
+    margin-top: 1em;
+}
+
+
+.card {
+    background: linear-gradient( rgb(255, 179, 0) 50%,white 50%);
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 350px;
+    height: 570px;
+    padding: 35px;
+}
+
+.pika {
+    height: 55%;
+    padding: 0 5%;
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: white;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.status {
+
+  /*   display: inline-block; */
+/*     border: 1px solid black; */
+    width: 46%;
+    float: left;
+/*     margin-right: 5%; */    
+}    
+
+.atributos-titulo {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 0 0.5em;
+    border-bottom: 1px solid rgb(212, 209, 209);
+    padding-bottom: 0.2em;
+}
+
+.habilidades {
+    box-sizing: border-box;
+    float: right;
+   /*  display: inline-block; */
+/*     border: 1px solid red; */
+    width: 42%;
+    vertical-align: top;
+/*     margin-left: 4%; */
+}
+
+li {
+    line-height: 1.5em;
+    color:rgb(95, 95, 95);
+}
+
+
+
+.pika, li, h1, h2, p{
+    transition: 0.2s;
+    cursor: pointer;
+}
+.pika:hover{
+    transform: scale(1.1);
+}
+
+.pika:active {
+    color: blue;
+}
+
+li:hover{
+    transform: scale(1.03);
+}
+
+li:active{
+    transition: none;
+    color: red;
+}
